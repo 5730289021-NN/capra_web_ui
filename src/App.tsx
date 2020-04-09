@@ -9,6 +9,7 @@ import { GlobalStyles } from 'App.styles'
 import { Provider } from 'react-redux'
 import { store } from 'store/store'
 import inputsys from 'utils/InputSystem'
+import { TerminalOverlay } from 'components/Terminal/TerminalOverlay'
 
 const App: FC = () => {
   useEffect(() => {
@@ -25,6 +26,7 @@ const App: FC = () => {
             <>
               <GlobalStyles />
               <Layout />
+              <TerminalOverlay />
             </>
           </ThemeProvider>
         </HashRouter>
